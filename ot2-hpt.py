@@ -8,18 +8,18 @@ from clearml import Task
 import typing_extensions
 import tensorboard
 
-os.environ['WANDB_API_KEY'] = 'af1a6039f20199fa6afe8c2022dde72b137ba944'
+os.environ['WANDB_API_KEY'] = 'f0c26550ec9902de91ecb9f54fbbdfc3c6bbb24e'
 
-task = Task.init(project_name="Mentor Group E/Group DMRM", task_name="ppo-hpt_name")
+task = Task.init(project_name="Mentor Group E/Group DMRM", task_name="ppo-hpt_michal")
 
 # Define sweep config
 sweep_config = {
     "method": "bayes",
-    "name": "sweep_name",
+    "name": "sweep_michal",
     "metric": {"goal": "minimize", "name": "rollout/ep_len_mean"},
     "parameters": {
-        "learning_rate": {"values": [0.0003, 0.0001, 0.00005, 0.0005, 0.00008]},
-        # "n_steps": {"distribution": "int_uniform", "min": 128, "max": 512},
+        #"learning_rate": {"values": [0.0003, 0.0001, 0.00005, 0.0005, 0.00008]},
+        "n_steps": {"distribution": "int_uniform", "min": 128, "max": 512},
         # "batch_size": {"distribution": "int_uniform", "min": 32, "max": 256},
         # "gamma": {"distribution": "uniform", "min": 0.9, "max": 0.999},
     },
@@ -41,15 +41,15 @@ def main(config=None):
 
     config = run.config
 
-    learning_rate = config.learning_rate 
-    # n_steps = config.n_steps 
+    #learning_rate = config.learning_rate 
+    n_steps = config.n_steps 
     # batch_size = config.batch_size
     # gamma = config.gamma 
 
     env = OT2Env()
     env.reset(seed=42)
 
-    model = PPO("MlpPolicy", env, learning_rate=learning_rate, verbose=1, tensorboard_log="./logs_final_hpt")
+    model = PPO("MlpPolicy", env,  n_steps=n_steps, verbose=1, tensorboard_log="./logs_final_hpt")
 
     model.learn(total_timesteps=2_000_000, reset_num_timesteps=False)
 
