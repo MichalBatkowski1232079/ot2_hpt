@@ -7,6 +7,10 @@ from ot2_wrapper_final import OT2Env
 from clearml import Task
 import typing_extensions
 import tensorboard
+import sys
+
+# Add the current directory to the Python path
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 os.environ['WANDB_API_KEY'] = 'f0c26550ec9902de91ecb9f54fbbdfc3c6bbb24e'
 
@@ -19,7 +23,7 @@ sweep_config = {
     "metric": {"goal": "minimize", "name": "rollout/ep_len_mean"},
     "parameters": {
         #"learning_rate": {"values": [0.0003, 0.0001, 0.00005, 0.0005, 0.00008]},
-        "n_steps": {"distribution": "int_uniform", "min": 128, "max": 512},
+        "n_steps": {"distribution": "int_uniform", "min": 2048, "max": 4096},
         # "batch_size": {"distribution": "int_uniform", "min": 32, "max": 256},
         # "gamma": {"distribution": "uniform", "min": 0.9, "max": 0.999},
     },
