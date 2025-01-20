@@ -9,9 +9,6 @@ import typing_extensions
 import tensorboard
 import sys
 
-# Add the current directory to the Python path
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
-
 os.environ['WANDB_API_KEY'] = 'f0c26550ec9902de91ecb9f54fbbdfc3c6bbb24e'
 
 task = Task.init(project_name="Mentor Group E/Group DMRM", task_name="ppo-hpt_michal")
