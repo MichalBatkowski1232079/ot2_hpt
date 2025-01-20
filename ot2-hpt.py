@@ -1,4 +1,3 @@
-import gym
 from stable_baselines3 import PPO
 import os
 import wandb
@@ -8,6 +7,7 @@ from clearml import Task
 import typing_extensions
 import tensorboard
 import sys
+
 
 os.environ['WANDB_API_KEY'] = 'f0c26550ec9902de91ecb9f54fbbdfc3c6bbb24e'
 
@@ -34,8 +34,9 @@ parameters_dict = Task.current_task().connect(sweep_config)
 task.set_base_docker('deanis/2023y2b-rl:latest')
 #setting the task to run remotely on the default queue
 task.execute_remotely(queue_name="default")
+task.upload_artifact('ot2_wrapper_final', artifact_object='ot2_wrapper_final.py')
 
-sweep_id = wandb.sweep(parameters_dict, project="sweep_for_weights")
+sweep_id = wandb.sweep(sweep_config, project="sweep_for_weights")
 
 def main(config=None):
     run = wandb.init(config, sync_tensorboard=True)
