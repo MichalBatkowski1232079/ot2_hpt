@@ -11,7 +11,7 @@ import sys
 
 os.environ['WANDB_API_KEY'] = 'f0c26550ec9902de91ecb9f54fbbdfc3c6bbb24e'
 
-task = Task.init(project_name="Mentor Group E/Group DMRM", task_name="ppo-hpt_michal")
+task = Task.init(project_name="Mentor Group E/Group DMRM", task_name="ppo-hpt_michal", repo="https://github.com/MichalBatkowski1232079/ot2_hpt", branch="main")
 
 # Define sweep config
 sweep_config = {
