@@ -7,3 +7,12 @@
 {"time":"2025-01-21T13:35:03.0758239+01:00","level":"INFO","msg":"Starting system monitor"}
 {"time":"2025-01-21T13:35:14.9388424+01:00","level":"INFO","msg":"tensorboard: no root directory after 10 seconds, using working directory"}
 {"time":"2025-01-21T13:35:14.9432047+01:00","level":"ERROR","msg":"tensorboard: error creating symlink","target":"C:\\Users\\batkm\\Documents\\Github\\ot2_hpt\\logs_final_hpt\\PPO_0\\events.out.tfevents.1737462904.Michal.20716.0","symlink":"C:\\Users\\batkm\\Documents\\Github\\ot2_hpt\\wandb\\run-20250121_133502-bvjkgjqd\\files\\logs_final_hpt\\PPO_0\\events.out.tfevents.1737462904.Michal.20716.0","error":"symlink C:\\Users\\batkm\\Documents\\Github\\ot2_hpt\\logs_final_hpt\\PPO_0\\events.out.tfevents.1737462904.Michal.20716.0 C:\\Users\\batkm\\Documents\\Github\\ot2_hpt\\wandb\\run-20250121_133502-bvjkgjqd\\files\\logs_final_hpt\\PPO_0\\events.out.tfevents.1737462904.Michal.20716.0: A required privilege is not held by the client."}
+{"time":"2025-01-21T14:46:30.9716916+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-21T14:46:30.972196+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-21T14:46:31.7186642+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-21T14:46:31.9669284+01:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-01-21T14:46:32.9887122+01:00","level":"INFO","msg":"stream: closing","id":"bvjkgjqd"}
+{"time":"2025-01-21T14:46:32.9887122+01:00","level":"INFO","msg":"handler: closed","stream_id":"bvjkgjqd"}
+{"time":"2025-01-21T14:46:32.9887122+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"bvjkgjqd"}
+{"time":"2025-01-21T14:46:32.9887122+01:00","level":"INFO","msg":"sender: closed","stream_id":"bvjkgjqd"}
+{"time":"2025-01-21T14:46:32.9887122+01:00","level":"INFO","msg":"stream: closed","id":"bvjkgjqd"}

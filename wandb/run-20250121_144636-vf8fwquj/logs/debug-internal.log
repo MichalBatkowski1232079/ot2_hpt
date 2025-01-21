@@ -1,0 +1,18 @@
+{"time":"2025-01-21T14:46:37.1209304+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"C:\\Users\\batkm\\Documents\\Github\\ot2_hpt\\wandb\\run-20250121_144636-vf8fwquj\\logs\\debug-core.log"}
+{"time":"2025-01-21T14:46:37.2306508+01:00","level":"INFO","msg":"created new stream","id":"vf8fwquj"}
+{"time":"2025-01-21T14:46:37.2306508+01:00","level":"INFO","msg":"stream: started","id":"vf8fwquj"}
+{"time":"2025-01-21T14:46:37.2306508+01:00","level":"INFO","msg":"handler: started","stream_id":"vf8fwquj"}
+{"time":"2025-01-21T14:46:37.2306508+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"vf8fwquj"}
+{"time":"2025-01-21T14:46:37.2306508+01:00","level":"INFO","msg":"sender: started","stream_id":"vf8fwquj"}
+{"time":"2025-01-21T14:46:37.4972688+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-21T14:46:48.0224177+01:00","level":"INFO","msg":"tensorboard: no root directory after 10 seconds, using working directory"}
+{"time":"2025-01-21T14:46:48.0259174+01:00","level":"ERROR","msg":"tensorboard: error creating symlink","target":"C:\\Users\\batkm\\Documents\\Github\\ot2_hpt\\logs_final_hpt\\PPO_0\\events.out.tfevents.1737467198.Michal.20716.1","symlink":"C:\\Users\\batkm\\Documents\\Github\\ot2_hpt\\wandb\\run-20250121_144636-vf8fwquj\\files\\logs_final_hpt\\PPO_0\\events.out.tfevents.1737467198.Michal.20716.1","error":"symlink C:\\Users\\batkm\\Documents\\Github\\ot2_hpt\\logs_final_hpt\\PPO_0\\events.out.tfevents.1737467198.Michal.20716.1 C:\\Users\\batkm\\Documents\\Github\\ot2_hpt\\wandb\\run-20250121_144636-vf8fwquj\\files\\logs_final_hpt\\PPO_0\\events.out.tfevents.1737467198.Michal.20716.1: A required privilege is not held by the client."}
+{"time":"2025-01-21T17:43:08.3722505+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-21T17:43:08.3728216+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-21T17:43:09.1905039+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-21T17:43:09.3853093+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 8622-8634, summary","runtime_seconds":0.1948054}],"total_operations":1}}
+{"time":"2025-01-21T17:43:10.4451658+01:00","level":"INFO","msg":"stream: closing","id":"vf8fwquj"}
+{"time":"2025-01-21T17:43:10.4451658+01:00","level":"INFO","msg":"handler: closed","stream_id":"vf8fwquj"}
+{"time":"2025-01-21T17:43:10.4451658+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"vf8fwquj"}
+{"time":"2025-01-21T17:43:10.4451658+01:00","level":"INFO","msg":"sender: closed","stream_id":"vf8fwquj"}
+{"time":"2025-01-21T17:43:10.4451658+01:00","level":"INFO","msg":"stream: closed","id":"vf8fwquj"}

@@ -1,0 +1,31 @@
+2025-01-21 14:46:36,805 INFO    Thread-24 :20716 [wandb_setup.py:_flush():68] Current SDK version is 0.19.4
+2025-01-21 14:46:36,805 INFO    Thread-24 :20716 [wandb_setup.py:_flush():68] Configure stats pid to 20716
+2025-01-21 14:46:36,805 INFO    Thread-24 :20716 [wandb_setup.py:_flush():68] Loading settings from C:\Users\batkm\.config\wandb\settings
+2025-01-21 14:46:36,805 INFO    Thread-24 :20716 [wandb_setup.py:_flush():68] Loading settings from C:\Users\batkm\Documents\Github\ot2_hpt\wandb\settings
+2025-01-21 14:46:36,805 INFO    Thread-24 :20716 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-01-21 14:46:36,805 INFO    Thread-24 :20716 [wandb_init.py:setup_run_log_directory():624] Logging user logs to C:\Users\batkm\Documents\Github\ot2_hpt\wandb\run-20250121_144636-vf8fwquj\logs\debug.log
+2025-01-21 14:46:36,807 INFO    Thread-24 :20716 [wandb_init.py:setup_run_log_directory():625] Logging internal logs to C:\Users\batkm\Documents\Github\ot2_hpt\wandb\run-20250121_144636-vf8fwquj\logs\debug-internal.log
+2025-01-21 14:46:36,807 INFO    Thread-24 :20716 [wandb_init.py:init():743] calling init triggers
+2025-01-21 14:46:36,807 INFO    Thread-24 :20716 [wandb_init.py:init():748] wandb.init called with sweep_config: {'n_steps': 3010}
+config: {}
+2025-01-21 14:46:36,807 INFO    Thread-24 :20716 [wandb_init.py:init():776] starting backend
+2025-01-21 14:46:37,113 INFO    Thread-24 :20716 [wandb_init.py:init():780] sending inform_init request
+2025-01-21 14:46:37,117 INFO    Thread-24 :20716 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=spawn, using: spawn
+2025-01-21 14:46:37,120 INFO    Thread-24 :20716 [wandb_init.py:init():795] backend started and connected
+2025-01-21 14:46:37,122 INFO    Thread-24 :20716 [wandb_run.py:_config_callback():1270] config_cb None None {'n_steps': 3010}
+2025-01-21 14:46:37,136 INFO    Thread-24 :20716 [wandb_init.py:init():888] updated telemetry
+2025-01-21 14:46:37,137 INFO    Thread-24 :20716 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-01-21 14:46:37,493 INFO    Thread-24 :20716 [wandb_init.py:init():967] starting run threads in backend
+2025-01-21 14:46:37,862 INFO    Thread-24 :20716 [wandb_run.py:_console_start():2409] atexit reg
+2025-01-21 14:46:37,863 INFO    Thread-24 :20716 [wandb_run.py:_redirect():2259] redirect: wrap_raw
+2025-01-21 14:46:37,865 INFO    Thread-24 :20716 [wandb_run.py:_redirect():2324] Wrapping output streams.
+2025-01-21 14:46:37,866 INFO    Thread-24 :20716 [wandb_run.py:_redirect():2349] Redirects installed.
+2025-01-21 14:46:37,867 INFO    Thread-24 :20716 [wandb_init.py:init():1009] run started, returning control to user process
+2025-01-21 14:46:38,021 INFO    Thread-24 :20716 [wandb_run.py:_tensorboard_callback():1464] tensorboard callback: ./logs_final_hpt\PPO_0, True
+2025-01-21 17:43:08,371 INFO    Thread-24 :20716 [wandb_run.py:_finish():2134] finishing run reinforcement_learning_npac_team_8/sweep_for_weights/vf8fwquj
+2025-01-21 17:43:08,371 INFO    Thread-24 :20716 [wandb_run.py:_atexit_cleanup():2374] got exitcode: 1
+2025-01-21 17:43:08,371 INFO    Thread-24 :20716 [wandb_run.py:_restore():2356] restore
+2025-01-21 17:43:08,371 INFO    Thread-24 :20716 [wandb_run.py:_restore():2362] restore done
+2025-01-21 17:43:10,441 INFO    Thread-24 :20716 [wandb_run.py:_footer_history_summary_info():3976] rendering history
+2025-01-21 17:43:10,442 INFO    Thread-24 :20716 [wandb_run.py:_footer_history_summary_info():4008] rendering summary
+2025-01-21 17:43:10,443 INFO    Thread-24 :20716 [wandb_run.py:_footer_sync_info():3937] logging synced files

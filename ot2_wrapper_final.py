@@ -85,7 +85,7 @@ class OT2Env(gym.Env):
 
         '''
             Extremely important to note is that maximum distance from
-            pipette_offset [0.073, 0.0895, 0.0895] point to any point
+            pipette_offset [0.073, 0.0895, 0.0895] point to any point 
             on the cube is around 0.4186. I will round it to 0.42
         '''
 

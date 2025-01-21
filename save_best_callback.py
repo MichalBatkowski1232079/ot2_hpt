@@ -4,11 +4,12 @@ import os
 
 
 class SaveBestRewardAtEndCallback(BaseCallback):
-    def __init__(self, log_dir: str, verbose=1):
+    def __init__(self, log_dir: str, n_steps: int, verbose=1):
         super(SaveBestRewardAtEndCallback, self).__init__(verbose)
         self.log_dir = log_dir
         self.best_mean_reward = -np.inf
         self.best_model = None
+        self.n_steps = n_steps  # Include n_steps in the filename
 
     def _on_step(self) -> bool:
         # Get the mean reward for the last episodes
@@ -23,7 +24,7 @@ class SaveBestRewardAtEndCallback(BaseCallback):
     def _on_training_end(self) -> None:
         # Save the best model when training ends
         if self.best_model is not None:
-            save_path = os.path.join(self.log_dir, "best_model.zip")
+            save_path = os.path.join(self.log_dir, f"best_model_nsteps_{self.n_steps}.zip")
             self.best_model.save(save_path)
             if self.verbose > 0:
-                print(f"Best model saved with mean reward: {self.best_mean_reward:.2f} at {save_path}")
+                print(f"Best model saved with mean reward at {save_path}")
