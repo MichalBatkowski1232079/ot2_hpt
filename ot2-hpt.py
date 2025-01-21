@@ -7,11 +7,12 @@ from clearml import Task
 import typing_extensions
 import tensorboard
 import sys
+from save_best_callback import SaveBestRewardAtEndCallback
 
 
 os.environ['WANDB_API_KEY'] = 'f0c26550ec9902de91ecb9f54fbbdfc3c6bbb24e'
 
-task = Task.init(project_name="Mentor Group E/Group DMRM", task_name="ppo-hpt_michal", repo="https://github.com/MichalBatkowski1232079/ot2_hpt", branch="main")
+task = Task.init(project_name="Mentor Group E/Group DMRM", task_name="ppo-hpt_michal")
 
 # Define sweep config
 sweep_config = {
@@ -29,12 +30,10 @@ sweep_config = {
 # Connect the dictionary to your CLEARML Task
 parameters_dict = Task.current_task().connect(sweep_config)
 
-#copy these lines exactly as they are
 #setting the base docker image
-task.set_base_docker('deanis/2023y2b-rl:latest')
+#task.set_base_docker('deanis/2023y2b-rl:latest')
 #setting the task to run remotely on the default queue
-task.execute_remotely(queue_name="default")
-task.upload_artifact('ot2_wrapper_final', artifact_object='ot2_wrapper_final.py')
+#task.execute_remotely(queue_name="default")
 
 sweep_id = wandb.sweep(sweep_config, project="sweep_for_weights")
 
@@ -43,18 +42,24 @@ def main(config=None):
 
     config = run.config
 
-    #learning_rate = config.learning_rate 
     n_steps = config.n_steps 
-    # batch_size = config.batch_size
-    # gamma = config.gamma 
+
+    print(f"Starting training with n_steps={n_steps}")
 
     env = OT2Env()
     env.reset(seed=42)
 
-    model = PPO("MlpPolicy", env,  n_steps=n_steps, verbose=1, tensorboard_log="./logs_final_hpt")
+    model = PPO("MlpPolicy", env, n_steps=n_steps, verbose=1, tensorboard_log="./logs_final_hpt")
 
-    model.learn(total_timesteps=2_000_000, reset_num_timesteps=False)
+    # Use the callback to save the best model only at the end
+    model.learn(total_timesteps=2_000_000, reset_num_timesteps=False, callback=SaveBestRewardAtEndCallback(log_dir="./logs_final_hpt"))
+
+    # Save the trained model locally
+    model.save("michal_model.zip")
+    # Save the model to W&B
+    run.save("michal_model.zip")
 
     run.finish()
+
 
 wandb.agent(sweep_id, main)

@@ -1,0 +1,9 @@
+{"time":"2025-01-21T13:35:02.6068381+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"C:\\Users\\batkm\\Documents\\Github\\ot2_hpt\\wandb\\run-20250121_133502-bvjkgjqd\\logs\\debug-core.log"}
+{"time":"2025-01-21T13:35:02.8178506+01:00","level":"INFO","msg":"created new stream","id":"bvjkgjqd"}
+{"time":"2025-01-21T13:35:02.8184458+01:00","level":"INFO","msg":"stream: started","id":"bvjkgjqd"}
+{"time":"2025-01-21T13:35:02.8184458+01:00","level":"INFO","msg":"handler: started","stream_id":"bvjkgjqd"}
+{"time":"2025-01-21T13:35:02.8184458+01:00","level":"INFO","msg":"sender: started","stream_id":"bvjkgjqd"}
+{"time":"2025-01-21T13:35:02.8184458+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"bvjkgjqd"}
+{"time":"2025-01-21T13:35:03.0758239+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-21T13:35:14.9388424+01:00","level":"INFO","msg":"tensorboard: no root directory after 10 seconds, using working directory"}
+{"time":"2025-01-21T13:35:14.9432047+01:00","level":"ERROR","msg":"tensorboard: error creating symlink","target":"C:\\Users\\batkm\\Documents\\Github\\ot2_hpt\\logs_final_hpt\\PPO_0\\events.out.tfevents.1737462904.Michal.20716.0","symlink":"C:\\Users\\batkm\\Documents\\Github\\ot2_hpt\\wandb\\run-20250121_133502-bvjkgjqd\\files\\logs_final_hpt\\PPO_0\\events.out.tfevents.1737462904.Michal.20716.0","error":"symlink C:\\Users\\batkm\\Documents\\Github\\ot2_hpt\\logs_final_hpt\\PPO_0\\events.out.tfevents.1737462904.Michal.20716.0 C:\\Users\\batkm\\Documents\\Github\\ot2_hpt\\wandb\\run-20250121_133502-bvjkgjqd\\files\\logs_final_hpt\\PPO_0\\events.out.tfevents.1737462904.Michal.20716.0: A required privilege is not held by the client."}
