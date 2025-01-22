@@ -1,0 +1,18 @@
+{"time":"2025-01-21T23:06:10.9559523+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"C:\\Users\\batkm\\Documents\\Github\\ot2_hpt\\wandb\\run-20250121_230610-3zwlxyfl\\logs\\debug-core.log"}
+{"time":"2025-01-21T23:06:11.0655389+01:00","level":"INFO","msg":"created new stream","id":"3zwlxyfl"}
+{"time":"2025-01-21T23:06:11.0655389+01:00","level":"INFO","msg":"stream: started","id":"3zwlxyfl"}
+{"time":"2025-01-21T23:06:11.0655389+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"3zwlxyfl"}
+{"time":"2025-01-21T23:06:11.0655389+01:00","level":"INFO","msg":"handler: started","stream_id":"3zwlxyfl"}
+{"time":"2025-01-21T23:06:11.0655389+01:00","level":"INFO","msg":"sender: started","stream_id":"3zwlxyfl"}
+{"time":"2025-01-21T23:06:11.3023889+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-21T23:06:22.2574423+01:00","level":"INFO","msg":"tensorboard: no root directory after 10 seconds, using working directory"}
+{"time":"2025-01-21T23:06:22.2620345+01:00","level":"ERROR","msg":"tensorboard: error creating symlink","target":"C:\\Users\\batkm\\Documents\\Github\\ot2_hpt\\logs_final_hpt\\PPO_0\\events.out.tfevents.1737497172.Michal.9896.2","symlink":"C:\\Users\\batkm\\Documents\\Github\\ot2_hpt\\wandb\\run-20250121_230610-3zwlxyfl\\files\\logs_final_hpt\\PPO_0\\events.out.tfevents.1737497172.Michal.9896.2","error":"symlink C:\\Users\\batkm\\Documents\\Github\\ot2_hpt\\logs_final_hpt\\PPO_0\\events.out.tfevents.1737497172.Michal.9896.2 C:\\Users\\batkm\\Documents\\Github\\ot2_hpt\\wandb\\run-20250121_230610-3zwlxyfl\\files\\logs_final_hpt\\PPO_0\\events.out.tfevents.1737497172.Michal.9896.2: A required privilege is not held by the client."}
+{"time":"2025-01-22T03:19:43.357528+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-22T03:19:43.3587098+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-22T03:19:44.3690959+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.6394559,"progress":"526.1KB/526.1KB"}],"total_operations":1}}
+{"time":"2025-01-22T03:19:44.5944115+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-22T03:19:45.8402785+01:00","level":"INFO","msg":"stream: closing","id":"3zwlxyfl"}
+{"time":"2025-01-22T03:19:45.8402785+01:00","level":"INFO","msg":"handler: closed","stream_id":"3zwlxyfl"}
+{"time":"2025-01-22T03:19:45.8402785+01:00","level":"INFO","msg":"sender: closed","stream_id":"3zwlxyfl"}
+{"time":"2025-01-22T03:19:45.8402785+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"3zwlxyfl"}
+{"time":"2025-01-22T03:19:45.8402785+01:00","level":"INFO","msg":"stream: closed","id":"3zwlxyfl"}
